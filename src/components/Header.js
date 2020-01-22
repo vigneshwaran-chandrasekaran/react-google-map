@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 export default function Header() {
 	return (
