@@ -1,17 +1,23 @@
 import React from 'react';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Header() {
 	return (
 		<Navbar bg="light" expand="lg">
-			<Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+			<Navbar.Brand as={NavLink} to="/autocomplete">
+				Google Map
+			</Navbar.Brand>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />
 			<Navbar.Collapse id="basic-navbar-nav">
 				<Nav className="mr-auto">
-					<Nav.Link href="#home">Home</Nav.Link>
-					<Nav.Link href="#link">Link</Nav.Link>
-					<NavDropdown title="Dropdown" id="basic-nav-dropdown">
+					<Nav.Link as={NavLink} to="/autocomplete">
+						Autocomplete
+					</Nav.Link>
+					<Nav.Link as={NavLink} to="/google-map">
+						Google map
+					</Nav.Link>
+					{/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
 						<NavDropdown.Item href="#action/3.1">
 							Action
 						</NavDropdown.Item>
@@ -25,7 +31,7 @@ export default function Header() {
 						<NavDropdown.Item href="#action/3.4">
 							Separated link
 						</NavDropdown.Item>
-					</NavDropdown>
+					</NavDropdown> */}
 				</Nav>
 			</Navbar.Collapse>
 		</Navbar>

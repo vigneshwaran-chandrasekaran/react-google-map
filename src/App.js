@@ -6,9 +6,9 @@ import { SimpleMap, Header, AutoComplete } from './components';
 
 function App() {
 	return (
-		<div className="App">
-			<Header />
-			<BrowserRouter>
+		<BrowserRouter>
+			<div className="App">
+				<Header />
 				<Switch>
 					<Route exact path="/autocomplete">
 						<AutoComplete />
@@ -17,8 +17,8 @@ function App() {
 						<SimpleMap />
 					</Route>
 				</Switch>
-			</BrowserRouter>
-		</div>
+			</div>
+		</BrowserRouter>
 	);
 }
 
