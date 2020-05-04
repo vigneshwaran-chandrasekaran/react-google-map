@@ -8,7 +8,7 @@
     "gh-pages": "^2.2.0",
     "google-map-react": "^1.1.7",
     "react": "^16.13.1",
-    "react-bootstrap": "^1.0.0",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-geosuggest": "^2.12.1",
     "react-router-dom": "^5.1.2",
